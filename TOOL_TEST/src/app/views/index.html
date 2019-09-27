@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/animate.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+
+</head>
+<body>
+        <section class="content">
+                <h1>Tips Calculater</h1>
+                <div class="request">
+                    <form action="" method="POST" id="Calculater">
+                        <p>How much was your bill?</p>
+                        <div class="group">
+                            <span>$</span>
+                            <input type="number" placeholder="Bill Amount" name="price"
+                                class="form-control" id="price" required>
+                                <label id="price-error"  class="error" for="price">Please enter your bill</label>
+                        </div>
+                        <p>How was your service?</p>
+                        <div class="group">
+                            <span>$</span>
+                            <select name="evaluate" class="form-control" id="evaluate">
+                                <option value="" disabled selected>--Choose an Option--</option>
+                                <option value="0.3"> 30% Outstanding</option>
+                                <option value="0.2"> 20% Good</option>
+                                <option value="0.15"> 15% It was OK</option>
+                                <option value="0.1"> 10% Bad</option>
+                                <option value="0.05"> 5% Terrible</option>
+                            </select>
+                            <label id="evaluate-error" class="error" for="evaluate">Please choose an evaluate type </label>
+                        </div>
+                        <p>How many people are sharing the bill?</p>
+                        <div class="group">
+                            <input type="number" placeholder="Number people" name="people" id="people"
+                                class="form-control">
+                            <span>people</span>
+                            <label id="people-error" class="error" for="people">Please enter number people</label>
+                        </div>
+                        <div class="group">
+                            <button class="btn btn-success btn-block" type="button" onclick="submit1()">Calculater</button>
+                        </div>
+                        <div class="group" style="margin-top:10px">
+                            <span>Total: $</span>
+                            <span id="total"></span>
+                            <span>/each</span>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+    <script src="../../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/jquery.validate.min.js"></script>
+    <!-- <script src="../../assets/js/style.js"></script> -->
+    <script src="../../assets/js/javascript.js"></script>
+
+
+</body>
+</html>

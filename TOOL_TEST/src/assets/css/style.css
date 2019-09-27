@@ -1,0 +1,57 @@
+body {
+    background: rgba(120,120,120,.4);
+    font-family: 'Raleway', sans-serif;
+}
+
+.content {
+    padding: 30px;
+    position: absolute;
+    background: #ffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.content >h1 {
+    position: relative;
+}
+.content >h1::after{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    height: 2px;
+    width: 50%;
+    background: blue;
+    top: 100%;
+    left: 28%;
+    /* border-bottom: 2px solid black; */
+    font-weight: bold;
+
+}
+form > p {
+    padding-top:20px;
+    margin-bottom: 5px !important;
+}
+input:focus {
+    outline:0 !important;
+}
+.content .request .group{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.content .request .group span{
+    padding: 0 10px;
+}
+.content .request .group button {
+    margin-top: 30px;
+}
+.content .request .group label {
+    position: absolute;
+    top:100%;
+    right:0%;
+    color: red;
+    display: none;
+}
+
